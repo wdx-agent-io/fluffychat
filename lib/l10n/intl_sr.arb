@@ -344,11 +344,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "chatBackupDescription": "Ваша резервна копија ћаскања је обезбеђена кључем. Немојте да га изгубите.",
-    "@chatBackupDescription": {
-        "type": "String",
-        "placeholders": {}
-    },
     "chatDetails": "Детаљи ћаскања",
     "@chatDetails": {
         "type": "String",
@@ -680,11 +675,6 @@
     },
     "enterAnEmailAddress": "Унесите адресу е-поште",
     "@enterAnEmailAddress": {
-        "type": "String",
-        "placeholders": {}
-    },
-    "everythingReady": "Све је спремно!",
-    "@everythingReady": {
         "type": "String",
         "placeholders": {}
     },
@@ -1505,11 +1495,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "transferFromAnotherDevice": "Пренос са другог уређаја",
-    "@transferFromAnotherDevice": {
-        "type": "String",
-        "placeholders": {}
-    },
     "tryToSendAgain": "Покушај слање поново",
     "@tryToSendAgain": {
         "type": "String",
@@ -1712,11 +1697,6 @@
     },
     "whyDoYouWantToReportThis": "Зашто желите ово да пријавите?",
     "@whyDoYouWantToReportThis": {
-        "type": "String",
-        "placeholders": {}
-    },
-    "wipeChatBackup": "Да обришем резервну копију како би направио нови сигурносни кључ?",
-    "@wipeChatBackup": {
         "type": "String",
         "placeholders": {}
     },
@@ -2003,7 +1983,6 @@
     },
     "sendReadReceipts": "",
     "pushNotificationsNotAvailable": "",
-    "storeInAppleKeyChain": "",
     "advancedConfigurations": "",
     "hydrate": "",
     "signUpGreeting": "",
@@ -2024,7 +2003,6 @@
     },
     "allowMultipleAnswers": "",
     "sender": "",
-    "storeInAndroidKeystore": "",
     "answersWillBeVisibleWhenPollHasEnded": "",
     "manageAccount": "",
     "verifyOtherDevice": "",
@@ -2052,7 +2030,6 @@
         "type": "String",
         "description": "Usage hint for the command /clearcache"
     },
-    "saveKeyManuallyDescription": "",
     "makeModerator": "",
     "italicText": "",
     "addAnswerOption": "",
@@ -2099,7 +2076,6 @@
     "dehydrateWarning": "",
     "noOtherDevicesFound": "",
     "notificationRuleEncryptedRoomOneToOne": "",
-    "yourChatBackupHasBeenSetUp": "",
     "redactedBy": "",
     "@redactedBy": {
         "type": "String",
@@ -2166,7 +2142,6 @@
     "readUpToHere": "",
     "start": "",
     "customEmojisAndStickers": "",
-    "unlockOldMessages": "",
     "identityServer": "",
     "accessAndVisibilityDescription": "",
     "support": "",
@@ -2223,7 +2198,6 @@
     "notificationRuleTombstone": "",
     "experimentalVideoCalls": "",
     "removeModeratorRights": "",
-    "pleaseEnterRecoveryKeyDescription": "",
     "supportPage": "",
     "welcomeText": "",
     "openInMaps": "",
@@ -2312,7 +2286,6 @@
         "description": "State that {command} is not a valid /command."
     },
     "redactMessageDescription": "",
-    "loadingMessages": "",
     "recoveryKey": "",
     "commandHint_discardsession": "",
     "@commandHint_discardsession": {
@@ -2526,7 +2499,6 @@
     "crossVerifiedDevices": "",
     "shareInviteLink": "",
     "commandHint_markasdm": "",
-    "recoveryKeyLost": "",
     "cuddleContent": "",
     "@cuddleContent": {
         "type": "String",
@@ -2694,7 +2666,6 @@
     "formattedMessagesDescription": "",
     "supportFluffyChat": "",
     "databaseMigrationBody": "",
-    "storeInSecureStorageDescription": "",
     "kickUserDescription": "",
     "startedAPoll": "",
     "@startedAPoll": {
@@ -2707,7 +2678,6 @@
     },
     "notificationRuleEncrypted": "",
     "importNow": "",
-    "setupChatBackup": "",
     "pinMessage": "",
     "noChatsFoundHere": "",
     "pleaseFillOut": "",
@@ -2753,7 +2723,6 @@
     "inviteGroupChat": "",
     "sendReadReceiptsDescription": "",
     "block": "",
-    "storeSecurlyOnThisDevice": "",
     "passwordsDoNotMatch": "",
     "screenSharingDetail": "",
     "placeCall": ""

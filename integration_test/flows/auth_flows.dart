@@ -27,6 +27,19 @@ extension AuthFlows on FluffyChatTester {
     await enterText(TextField, username, index: 0);
     await enterText(TextField, password, index: 1);
     await tapOn('Login');
+
+    if (passphrase != null) {
+      await waitFor('Restore Crypto Identity');
+      await enterText(TextField, passphrase!);
+      await tapOn('Unlock');
+    } else {
+      await waitFor('Set Up Crypto Identity');
+      await enterText(TextField, passphrase1, index: 0);
+      await enterText(TextField, passphrase1, index: 1);
+      await tapOn('Continue');
+      await tapOn('Continue');
+      passphrase = passphrase1;
+    }
   }
 
   Future<void> logout() async {
@@ -45,12 +58,13 @@ extension AuthFlows on FluffyChatTester {
     }
   }
 
+  static String? passphrase;
+
   Future<bool> ensureLoggedIn() async {
     if (await isVisible('Sign in') == false) return false;
 
     await login();
-    await tapOn(CloseButton);
-    await tapOn('Skip');
+
     await skipNoNotificationsDialog();
     return true;
   }

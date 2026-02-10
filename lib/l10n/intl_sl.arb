@@ -283,7 +283,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "yourChatBackupHasBeenSetUp": "Varnostna kopija klepeta je nastavljena.",
     "chatBackup": "Varnostno kopiranje klepeta",
     "@chatBackup": {
         "type": "String",
@@ -473,11 +472,6 @@
     },
     "contentHasBeenReported": "Vsebina je bila prijavljena skrbnikom strežnika",
     "@contentHasBeenReported": {
-        "type": "String",
-        "placeholders": {}
-    },
-    "chatBackupDescription": "Varnostna kopija klepeta je zavarovana z varnostnim ključem. Prosimo, pazite, da ga ne izgubite.",
-    "@chatBackupDescription": {
         "type": "String",
         "placeholders": {}
     },
@@ -1175,7 +1169,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "storeInAppleKeyChain": "",
     "advancedConfigurations": "",
     "replaceRoomWithNewerVersion": "",
     "@replaceRoomWithNewerVersion": {
@@ -1194,15 +1187,9 @@
         "type": "String",
         "placeholders": {}
     },
-    "wipeChatBackup": "",
-    "@wipeChatBackup": {
-        "type": "String",
-        "placeholders": {}
-    },
     "pause": "",
     "allowMultipleAnswers": "",
     "sender": "",
-    "storeInAndroidKeystore": "",
     "hideRedactedEvents": "",
     "@hideRedactedEvents": {
         "type": "String",
@@ -1269,11 +1256,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "transferFromAnotherDevice": "",
-    "@transferFromAnotherDevice": {
-        "type": "String",
-        "placeholders": {}
-    },
     "passwordHasBeenChanged": "",
     "@passwordHasBeenChanged": {
         "type": "String",
@@ -1294,7 +1276,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "saveKeyManuallyDescription": "",
     "makeModerator": "",
     "italicText": "",
     "addAnswerOption": "",
@@ -1542,7 +1523,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "unlockOldMessages": "",
     "identityServer": "",
     "recording": "",
     "@recording": {
@@ -1691,7 +1671,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "pleaseEnterRecoveryKeyDescription": "",
     "guestsAreForbidden": "",
     "@guestsAreForbidden": {
         "type": "String",
@@ -1872,7 +1851,6 @@
         "placeholders": {}
     },
     "redactMessageDescription": "",
-    "loadingMessages": "",
     "recoveryKey": "",
     "redactMessage": "",
     "@redactMessage": {
@@ -2296,7 +2274,6 @@
     "crossVerifiedDevices": "",
     "shareInviteLink": "",
     "commandHint_markasdm": "",
-    "recoveryKeyLost": "",
     "cuddleContent": "",
     "@cuddleContent": {
         "type": "String",
@@ -2326,11 +2303,6 @@
     },
     "saveChanges": "",
     "commandHint_logout": "",
-    "everythingReady": "",
-    "@everythingReady": {
-        "type": "String",
-        "placeholders": {}
-    },
     "newStickerPack": "",
     "signInGreeting": "",
     "oneOfYourDevicesIsNotVerified": "",
@@ -2639,7 +2611,6 @@
     },
     "supportFluffyChat": "",
     "databaseMigrationBody": "",
-    "storeInSecureStorageDescription": "",
     "kickUserDescription": "",
     "startedAPoll": "",
     "@startedAPoll": {
@@ -2667,7 +2638,6 @@
         "type": "String",
         "placeholders": {}
     },
-    "setupChatBackup": "",
     "pinMessage": "",
     "noChatsFoundHere": "",
     "pleaseFillOut": "",
@@ -2737,7 +2707,6 @@
     },
     "sendReadReceiptsDescription": "",
     "block": "",
-    "storeSecurlyOnThisDevice": "",
     "passwordsDoNotMatch": "",
     "screenSharingDetail": "",
     "placeCall": ""
