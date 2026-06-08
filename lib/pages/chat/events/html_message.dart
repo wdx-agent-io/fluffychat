@@ -105,6 +105,7 @@ class HtmlMessage extends StatelessWidget {
     'table',
     'details',
     'blockquote',
+    'li',  // required so consecutive <li> items do not collapse onto one line
   };
 
   /// We add line breaks before these tags:
@@ -115,7 +116,8 @@ class HtmlMessage extends StatelessWidget {
     'h4',
     'h5',
     'h6',
-    'li',
+    // 'li' intentionally omitted: list items are now separated by the
+    // blockHtmlTags '\n' delimiter below, instead of a full-line break.
   };
 
   /// Adding line breaks before block elements.
@@ -134,7 +136,7 @@ class HtmlMessage extends StatelessWidget {
             onlyElements.indexOf(nodes[i] as dom.Element) <
                 onlyElements.length - 1) ...[
           if (blockHtmlTags.contains((nodes[i] as dom.Element).localName))
-            const TextSpan(text: '\n\n'),
+            const TextSpan(text: '\n'),  // single empty line between blocks
           if (fullLineHtmlTag.contains((nodes[i] as dom.Element).localName))
             const TextSpan(text: '\n'),
         ],
@@ -182,7 +184,13 @@ class HtmlMessage extends StatelessWidget {
 
     switch (node.localName) {
       case 'br':
-        return const TextSpan(text: '\n');
+        // Soft line break. The line-height multiplier is bounded via
+        // height: 0.4 on this span alone, so a single '\n' does not
+        // visually inflate to a full line of vertical space.
+        return TextSpan(
+          text: '\n',
+          style: TextStyle(fontSize: fontSize, height: 0.4),
+        );
       case 'a':
         final href = node.attributes['href'];
         if (href == null) continue block;
@@ -560,7 +568,7 @@ class HtmlMessage extends StatelessWidget {
             'u' => const TextStyle(decoration: TextDecoration.underline),
             'h1' => TextStyle(fontSize: fontSize * 1.6, height: 2),
             'h2' => TextStyle(fontSize: fontSize * 1.5, height: 2),
-            'h3' => TextStyle(fontSize: fontSize * 1.4, height: 2),
+            'h3' => TextStyle(fontSize: fontSize * 1.4, height: 1.4),
             'h4' => TextStyle(fontSize: fontSize * 1.3, height: 1.75),
             'h5' => TextStyle(fontSize: fontSize * 1.2, height: 1.75),
             'h6' => TextStyle(fontSize: fontSize * 1.1, height: 1.5),
